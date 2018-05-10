@@ -1,0 +1,26 @@
+version: '2'
+services:
+  nginx:
+    build: build/nginx
+    hostname: nginx
+    container_name: nginx
+    ports:
+     - "80:80"
+    volumes:
+     - ./application:/var/www/html
+    networks:
+     - appnet
+  php:
+    build: build/php
+    volumes:
+     - ./application:/var/www/html
+    hostname: php
+    container_name: php
+    networks:
+     - appnet
+networks:
+  appnet:
+    driver: "bridge"
+volumes:
+  data:
+    driver: "local"
