@@ -16,6 +16,7 @@ services:
      - ./application:/var/www/html
     hostname: php
     container_name: php
+    working_dir: /var/www/html/application
     networks:
      - appnet
 networks:
