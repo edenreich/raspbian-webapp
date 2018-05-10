@@ -26,7 +26,7 @@ pip install docker-compose
 On the command line:
 ```sh
 git clone https://github.com/edenreich/raspbian-webapp.git && cd raspbian-webapp \
-docker-compose up -d
+	&& docker-compose up -d
 ```
 
 Create a new laravel project for example:
