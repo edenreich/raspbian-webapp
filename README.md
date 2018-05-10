@@ -21,13 +21,13 @@ Then install docker-compose using pip:
 pip install docker-compose
 ```
 
-On the command line:
+Lastly clone the repository:
 ```sh
 git clone https://github.com/edenreich/raspbian-webapp.git && cd raspbian-webapp
 ```
 ## Usage
 
-In the root directory of the cloned repository run the containers:
+In the root directory of the cloned repository, run the containers:
 ```sh
 docker-compose up -d
 ```
