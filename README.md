@@ -41,7 +41,7 @@ docker exec -it php composer create-project laravel/laravel . --prefer-dist
 
 Clone existing project:
 ```sh
-git clone [project] application \
+git clone [project] . \
 	&& docker exec -it php composer install
 ```
 
