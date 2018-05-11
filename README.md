@@ -27,14 +27,16 @@ git clone https://github.com/edenreich/raspbian-webapp.git && cd raspbian-webapp
 ```
 ## Usage
 
-In the root directory of the cloned repository, run the containers:
+In the root directory of the cloned repository, create a new directory called ```application```.
+
+Then run the containers:
 ```sh
 docker-compose up -d
 ```
 
 Create a new laravel project for example:
 ```sh
-docker exec -it php composer create-project laravel/laravel application --prefer-dist
+docker exec -it php composer create-project laravel/laravel . --prefer-dist
 ```
 
 Clone existing project:
