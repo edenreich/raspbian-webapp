@@ -27,12 +27,7 @@ git clone https://github.com/edenreich/raspbian-webapp.git && cd raspbian-webapp
 ```
 ## Usage
 
-In the root directory of the cloned repository, create a new directory called 'application':
-```sh
-sudo mkdir -m 755 www-data
-```
-
-Then run the containers:
+Run the containers:
 ```sh
 docker-compose up -d
 ```
