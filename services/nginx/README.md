@@ -2,7 +2,7 @@
 
 # Raspberry Pi Nginx
 
-Raspberry PI docker image for running nginx version 1.6.*
+Raspberry PI docker image container running nginx version 1.6.*
 
 ## Requirements
 

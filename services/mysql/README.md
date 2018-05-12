@@ -2,7 +2,7 @@
 
 # Raspberry Pi MySQL - Mariadb 10.1.3
 
-Raspberry PI docker image running mariadb 10.1.3
+Raspberry PI docker image container running mariadb 10.1.3
 
 ## Requirements
 
