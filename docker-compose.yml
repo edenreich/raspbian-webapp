@@ -1,7 +1,7 @@
 version: '2'
 services:
   nginx:
-    build: build/nginx
+    build: services/nginx
     hostname: nginx
     container_name: nginx
     ports:
@@ -11,12 +11,23 @@ services:
     networks:
      - appnet
   php:
-    build: build/php
+    build: services/php
     volumes:
      - ./application:/var/www/html
     hostname: php
     container_name: php
     working_dir: /var/www/html
+    networks:
+     - appnet
+  mysql:
+    build: services/mysql
+    hostname: mysql
+    container_name: mysql
+    volumes:
+     - data:/var/lib/mysql
+    environment:
+     MYSQL_USERNAME: admin
+     MYSQL_PASSWORD: secret
     networks:
      - appnet
 networks:
