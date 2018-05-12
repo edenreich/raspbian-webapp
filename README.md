@@ -2,7 +2,12 @@
 
 # Raspberry Pi Webapp
 
-Easy setup for PHP 7.0 FPM with Nginx 1.6
+Easy and secure setup for Raspberry Pi Webapp.
+
+What's included: 
+- PHP-FPM 7.0 
+- Nginx 1.6.*
+- MySQL - Mariadb 10.1.3
 
 ## Requirements
 
