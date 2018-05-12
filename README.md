@@ -16,7 +16,7 @@ What's included:
 
 ## Installation
 
-First install docker client:
+First ssh into your raspberry pi and install docker client:
 ```sh
 curl -sSL https://get.docker.com | sh
 ```
